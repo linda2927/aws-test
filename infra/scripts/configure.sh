@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/ubuntu/aws-test/infra/configs
-cp nginx/nginx.conf /etc/nginx
-cp -r nginx/conf.d /etc/nginx
-cp systemd/gunicorn.socket /etc/systemd/system
-cp systemd/gunicorn.service /etc/systemd/system
+sudo cp nginx/nginx.conf /etc/nginx
+sudo cp -r nginx/conf.d /etc/nginx
+sudo cp systemd/gunicorn.socket /etc/systemd/system
+sudo cp systemd/gunicorn.service /etc/systemd/system
