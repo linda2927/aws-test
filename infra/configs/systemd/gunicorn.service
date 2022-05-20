@@ -11,6 +11,7 @@ Group=ubuntu
 # DynamicUser=yes
 # see http://0pointer.net/blog/dynamic-users-with-systemd.html
 WorkingDirectory=/home/ubuntu/aws-test/vpc
+EnvironmentFile=/home/ubuntu/aws-test/.venvs/aws-test.env
 ExecStart=/usr/bin/gunicorn \
         --workers 5 \
         --bind unix:/run/gunicorn.sock \
