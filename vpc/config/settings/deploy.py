@@ -1,3 +1,3 @@
 from .base import *
 
-ALLOWED_HOSTS = ["3.39.87.201"]
+ALLOWED_HOSTS = [".ap-northeast-2.compute.amazonaws.com"]
