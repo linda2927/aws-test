@@ -7,12 +7,9 @@ After=network.target
 Type=notify
 User=ubuntu
 Group=ubuntu
-# another option for an even more restricted service is
-# DynamicUser=yes
-# see http://0pointer.net/blog/dynamic-users-with-systemd.html
 WorkingDirectory=/home/ubuntu/aws-test/vpc
 EnvironmentFile=/home/ubuntu/aws-test/.venv/aws-test.env
-ExecStart=/usr/bin/gunicorn \
+ExecStart=/home/ubuntu/.local/bin/gunicorn \
         --workers 2 \
         --bind unix:/run/gunicorn.sock \
         --access-logfile /var/log/gunicorn/access.log \
